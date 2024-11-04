@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "tebakkata_backend": {
+      "main": "src/tebakkata_backend/main.mo",
+      "type": "motoko"
+    },
+    "tebakkata_frontend": {
+      "dependencies": [
+        "tebakkata_backend"
+      ],
+      "source": [
+        "src/tebakkata_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "tebakkata_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
