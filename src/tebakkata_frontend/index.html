@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>IC Hello Starter</title>
-  <base href="/" />
-  <link rel="icon" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tebak Kata</title>
 </head>
-
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+    <h1>Tebak Kata</h1>
+    <div id="game-area">
+        <p id="hint"></p>
+        <input type="text" id="guess" placeholder="Tebak kata...">
+        <button id="submit">Tebak</button>
+        <p id="score">Skor: 0</p>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
